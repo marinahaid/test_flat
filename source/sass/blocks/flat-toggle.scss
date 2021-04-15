@@ -1,0 +1,61 @@
+.flat__toggle {
+  position: absolute;
+  width: 30px;
+  height: 25px;
+  top: 55px;
+  right: 132px;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+  display: block;
+  outline: none !important;
+  background-color: inherit;
+
+  &:hover,
+  &:focus {
+    background-color: #f5f4f2;
+  }
+
+  &:active {
+    background-color: #e7e4de;
+  }
+}
+
+.flat__toggle::before,
+.flat__toggle::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  top: 11px;
+  left: 3px;
+  background-color: #b2b0ab;
+}
+
+.flat__toggle:focus::before,
+.flat__toggle:hover::before,
+.flat__toggle:focus::after,
+.flat__toggle:hover::after,
+.flat__toggle:active::before,
+.flat__toggle:active::after {
+  background-color: $color;
+}
+
+.flat__toggle::before {
+  transform: rotate(45deg);
+}
+.flat__toggle::after {
+  transform: rotate(-45deg);
+}
+
+@media (max-width: $tablet-width) {
+  .flat__toggle {
+    right: 38px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .flat__toggle {
+    right: 18px;
+  }
+}

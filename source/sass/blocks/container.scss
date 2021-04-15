@@ -1,0 +1,13 @@
+.container {
+  background-color: #ffffff;
+  margin: 40px 120px 40px 120px;
+  border-radius: 8px;
+
+  @media (max-width: $tablet-width) {
+    margin: 40px 28px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: 40px 8px;
+  }
+}

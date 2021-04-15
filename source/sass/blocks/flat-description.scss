@@ -1,0 +1,169 @@
+.flat__img img {
+  display: block;
+}
+
+.flat__description {
+  width: 636px;
+  padding-right: 188px;
+}
+
+.flat__description h3 {
+  font-size: 24px;
+  line-height: 36px;
+  margin: 0;
+  padding-bottom: 8px;
+}
+
+.flat__list {
+  display: flex;
+  padding-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.flat__status {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flat__status a {
+  display: flex;
+  background-color: #f5f4f2;
+  border-radius: 10px;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  align-items: center;
+  border-radius: 22px;
+  padding: 4px 6px;
+}
+
+.arrow,
+.cross {
+  padding-left: 8px;
+  padding-top: 5px;
+  margin-right: 11px;
+}
+
+
+
+.flat__img {
+  width: 86px;
+  margin: 9px 79px 0 0;
+}
+
+.flat__status-yes {
+  width: 184px;
+  color: #64b851;
+}
+
+.flat__status-no {
+  width: 249px;
+  color: #eb4b51;
+}
+
+.text-light {
+  margin: 0;
+}
+
+.text-dark {
+  margin: 0;
+}
+
+.flat__list li {
+  padding-bottom: 11px;
+  width: 100px;
+  margin-right: 43px;
+}
+
+@media (max-width: $tablet-width) {
+  .flat__description {
+    width: 300px;
+    padding-right: 10px;
+  }
+
+  .flat__img {
+    margin: 9px 79px 0 30px;
+  }
+
+  .flat__item-three {
+    order: 4;
+  }
+
+  .flat__item-four {
+    order: 3;
+  }
+
+  .flat__item-five {
+    order: 5;
+  }
+
+  .flat__item-six {
+    order: 6;
+  }
+
+  .flat__status {
+    flex-direction: column;
+  }
+
+  .flat__status-yes {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: $tablet-width-only) {
+  .flat__description {
+    width: 460px;
+    padding-right: 0;
+  }
+
+  .flat__list {
+    padding-right: 100px;
+  }
+
+  .flat__img {
+  }
+
+  .flat__status {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .flat__img {
+    margin: 0;
+    padding-bottom: 26px;
+    margin: 0 auto;
+  }
+
+  .flat__description {
+    width: 100%;
+  }
+
+  .flat__description h3 {
+    font-size: 20px;
+    line-height: 28px;
+    padding-bottom: 15px;
+  }
+
+  .flat__list li {
+    padding-bottom: 12px;
+  }
+
+  .flat__list li:nth-child(2),
+  .flat__list li:nth-child(3),
+  .flat__list li:nth-child(6) {
+    margin-right: 0;
+  }
+
+  .flat__status {
+    flex-direction: column;
+  }
+
+  .flat__status-yes {
+    margin-bottom: 7px;
+  }
+
+  .flat__list {
+    padding-right: 0;
+  }
+}
